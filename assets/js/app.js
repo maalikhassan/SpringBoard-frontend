@@ -1,4 +1,5 @@
-//to code
+console.log("js loaded");
+
 function name (){
     
 }
