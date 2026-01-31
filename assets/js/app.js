@@ -107,7 +107,35 @@ const pages = {
             </section>
         </div>`,
     rooms: `
-        `,
+        <div class="p-8">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold">Room Directory</h2>
+                    <p class="text-sm text-gray-500">Manage and monitor all meeting rooms</p>
+                </div>
+                <button class="bg-[#10b981] text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600">
+                    + Add New Room
+                </button>
+             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl border p-6 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-lg">Conference Room A</h3>
+                        <span class="bg-orange-100 text-orange-600 text-[10px] font-bold px-2 py-1 rounded uppercase">Occupied</span>
+                    </div>
+                    <div class="space-y-2 text-sm text-gray-500 mb-6">
+                        <p><i class="fas fa-map-marker-alt w-5"></i> 2nd Floor</p>
+                        <p><i class="fas fa-users w-5"></i> Capacity: 12 people</p>
+                        <p><i class="fas fa-desktop w-5"></i> Projector, Whiteboard, Video Conference</p>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="flex-1 border py-2 rounded-lg text-sm font-medium hover:bg-gray-50">View Details</button>
+                        <button class="flex-1 bg-[#10b981] text-white py-2 rounded-lg text-sm font-medium">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>`,
     users: `
         <div class="p-8">
             <h2 class="text-2xl font-bold">Users Management</h2>
