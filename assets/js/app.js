@@ -139,7 +139,39 @@ const pages = {
     users: `
         <div class="p-8">
             <h2 class="text-2xl font-bold">Users Management</h2>
-            </div>`
+            </div>`,
+    booking: `<div class="bg-white rounded-xl border shadow-sm m-8 overflow-hidden">
+    <div class="p-6 border-b">
+        <h3 class="font-bold">Recent Bookings</h3>
+    </div>
+    <table class="w-full text-left">
+        <thead class="bg-gray-50 text-xs text-gray-400 uppercase">
+            <tr>
+                <th class="px-6 py-4">Booking ID</th>
+                <th class="px-6 py-4">Room</th>
+                <th class="px-6 py-4">User</th>
+                <th class="px-6 py-4">Date & Time</th>
+                <th class="px-6 py-4">Status</th>
+                <th class="px-6 py-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y text-sm">
+            <tr>
+                <td class="px-6 py-4 font-medium">BK-001</td>
+                <td class="px-6 py-4 text-gray-500">Conference Room A</td>
+                <td class="px-6 py-4">John Smith</td>
+                <td class="px-6 py-4 text-gray-500">Jan 30, 2026 • 09:00 AM</td>
+                <td class="px-6 py-4">
+                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">Confirmed</span>
+                </td>
+                <td class="px-6 py-4 space-x-3">
+                    <button class="text-gray-600 hover:text-black">Edit</button>
+                    <button class="text-red-500 hover:text-red-700">Cancel</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>`
 };
 
 // Function to change the content
@@ -148,10 +180,10 @@ function loadPage(pageKey, event) {
     if (event) event.preventDefault();
 
     const contentArea = document.getElementById('main-content');
-    
+
     if (pages[pageKey]) {
         contentArea.innerHTML = pages[pageKey];
-        
+
         // Re-initialize Lucide icons if you use them in the new content
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
@@ -208,11 +240,11 @@ function prevSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log("DOM loaded");
     loadPage('dashboard');
-    
+
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
-    
+
     // Re-query slides after content is loaded
     slides = document.querySelectorAll(".carousel-slide");
     if (slides.length > 0) {
