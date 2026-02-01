@@ -171,7 +171,165 @@ const pages = {
             </tr>
         </tbody>
     </table>
-</div>`
+</div>`,
+users: `<div class="p-8">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold">Users Management</h2>
+                    <p class="text-sm text-gray-500">Manage system users and their access</p>
+                </div>
+                <button class="bg-[#10b981] text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition flex items-center gap-2">
+                    <i data-lucide="plus"></i> Add New User
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl border shadow-sm overflow-hidden">
+                <div class="p-6 border-b bg-gray-50/50">
+                    <h3 class="font-bold text-gray-700">All Users</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-50 text-xs text-gray-400 uppercase font-semibold">
+                            <tr>
+                                <th class="px-6 py-4">User</th>
+                                <th class="px-6 py-4">Contact</th>
+                                <th class="px-6 py-4">Company</th>
+                                <th class="px-6 py-4">Role</th>
+                                <th class="px-6 py-4">Bookings</th>
+                                <th class="px-6 py-4">Status</th>
+                                <th class="px-6 py-4 text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y text-sm">
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">JS</div>
+                                        <span class="font-bold text-gray-900">John Smith</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-500">
+                                    <p class="text-xs italic">john.smith@company.com</p>
+                                    <p class="text-xs">+1 234-567-8901</p>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-2 text-gray-600">
+                                        <i data-lucide="building" class="w-4 h-4"></i> Tech Corp
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-600">Manager</td>
+                                <td class="px-6 py-4"><span class="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-700">12</span></td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase">Active</span>
+                                </td>
+                                <td class="px-6 py-4 text-right space-x-3">
+                                    <button class="text-gray-600 font-semibold hover:text-black">Edit</button>
+                                    <button class="text-red-500 font-semibold hover:text-red-700">Delete</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-xs">SJ</div>
+                                        <span class="font-bold text-gray-900">Sarah Johnson</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-500">
+                                    <p class="text-xs italic">sarah.j@startup.io</p>
+                                    <p class="text-xs">+1 234-567-8902</p>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-2 text-gray-600">
+                                        <i data-lucide="building" class="w-4 h-4"></i> Startup Inc
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-gray-600">Executive</td>
+                                <td class="px-6 py-4"><span class="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-700">8</span></td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase">Active</span>
+                                </td>
+                                <td class="px-6 py-4 text-right space-x-3">
+                                    <button class="text-gray-600 font-semibold hover:text-black">Edit</button>
+                                    <button class="text-red-500 font-semibold hover:text-red-700">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>`,
+        packages:`<div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+    <div class="relative bg-white rounded-2xl border-2 border-green-500 p-8 shadow-lg">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">
+            Most Popular
+        </div>
+        <h3 class="text-xl font-bold mb-2">Professional</h3>
+        <p class="text-gray-400 text-sm mb-6">Ideal for growing businesses</p>
+        <div class="mb-8">
+            <span class="text-4xl font-bold">$149</span>
+            <span class="text-gray-400">/ per month</span>
+        </div>
+        <ul class="space-y-4 mb-8 text-sm">
+            <li class="flex items-center text-gray-600">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i> Unlimited bookings
+            </li>
+            <li class="flex items-center text-gray-600">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i> Priority support
+            </li>
+        </ul>
+        <button class="w-full bg-green-500 text-white py-3 rounded-xl font-bold hover:bg-green-600">Get Started</button>
+    </div>
+</div>`,
+    companies:`<div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-2xl font-bold">Companies Management</h2>
+                <p class="text-sm text-gray-500">Manage corporate clients and organizations</p>
+            </div>
+            <button class="bg-[#10b981] text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 flex items-center gap-2">
+                <i data-lucide="plus"></i> Add New Company
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-xl border p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-50 p-3 rounded-lg text-blue-500">
+                            <i data-lucide="building-2" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Tech Corp</h3>
+                            <p class="text-xs text-gray-400 uppercase">Technology</p>
+                        </div>
+                    </div>
+                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-[10px] font-bold">ACTIVE</span>
+                </div>
+                
+                <div class="space-y-2 text-xs text-gray-500 mb-6 border-b pb-4">
+                    <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> contact@techcorp.com</p>
+                    <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +1 234-567-8900</p>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-6 text-center">
+                    <div><p class="text-lg font-bold">50</p><p class="text-[10px] text-gray-400 uppercase">Employees</p></div>
+                    <div><p class="text-lg font-bold">5</p><p class="text-[10px] text-gray-400 uppercase">Active</p></div>
+                    <div><p class="text-lg font-bold">45</p><p class="text-[10px] text-gray-400 uppercase">Total</p></div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-[10px] text-gray-400 uppercase mb-1">Current Package</p>
+                        <span class="border px-3 py-1 rounded-lg text-xs font-semibold">Professional</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="border px-4 py-2 rounded-lg text-xs font-bold">View Details</button>
+                        <button class="bg-[#10b981] text-white px-4 py-2 rounded-lg text-xs font-bold">Manage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`
 };
 
 // Function to change the content
