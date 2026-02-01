@@ -279,7 +279,57 @@ users: `<div class="p-8">
         </ul>
         <button class="w-full bg-green-500 text-white py-3 rounded-xl font-bold hover:bg-green-600">Get Started</button>
     </div>
-</div>`
+</div>`,
+    companies:`<div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-2xl font-bold">Companies Management</h2>
+                <p class="text-sm text-gray-500">Manage corporate clients and organizations</p>
+            </div>
+            <button class="bg-[#10b981] text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 flex items-center gap-2">
+                <i data-lucide="plus"></i> Add New Company
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-xl border p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-50 p-3 rounded-lg text-blue-500">
+                            <i data-lucide="building-2" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Tech Corp</h3>
+                            <p class="text-xs text-gray-400 uppercase">Technology</p>
+                        </div>
+                    </div>
+                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-[10px] font-bold">ACTIVE</span>
+                </div>
+                
+                <div class="space-y-2 text-xs text-gray-500 mb-6 border-b pb-4">
+                    <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> contact@techcorp.com</p>
+                    <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +1 234-567-8900</p>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mb-6 text-center">
+                    <div><p class="text-lg font-bold">50</p><p class="text-[10px] text-gray-400 uppercase">Employees</p></div>
+                    <div><p class="text-lg font-bold">5</p><p class="text-[10px] text-gray-400 uppercase">Active</p></div>
+                    <div><p class="text-lg font-bold">45</p><p class="text-[10px] text-gray-400 uppercase">Total</p></div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-[10px] text-gray-400 uppercase mb-1">Current Package</p>
+                        <span class="border px-3 py-1 rounded-lg text-xs font-semibold">Professional</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="border px-4 py-2 rounded-lg text-xs font-bold">View Details</button>
+                        <button class="bg-[#10b981] text-white px-4 py-2 rounded-lg text-xs font-bold">Manage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`
 };
 
 // Function to change the content
