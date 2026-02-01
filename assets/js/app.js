@@ -257,7 +257,29 @@ users: `<div class="p-8">
                     </table>
                 </div>
             </div>
-        </div>`
+        </div>`,
+        packages:`<div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+    <div class="relative bg-white rounded-2xl border-2 border-green-500 p-8 shadow-lg">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">
+            Most Popular
+        </div>
+        <h3 class="text-xl font-bold mb-2">Professional</h3>
+        <p class="text-gray-400 text-sm mb-6">Ideal for growing businesses</p>
+        <div class="mb-8">
+            <span class="text-4xl font-bold">$149</span>
+            <span class="text-gray-400">/ per month</span>
+        </div>
+        <ul class="space-y-4 mb-8 text-sm">
+            <li class="flex items-center text-gray-600">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i> Unlimited bookings
+            </li>
+            <li class="flex items-center text-gray-600">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i> Priority support
+            </li>
+        </ul>
+        <button class="w-full bg-green-500 text-white py-3 rounded-xl font-bold hover:bg-green-600">Get Started</button>
+    </div>
+</div>`
 };
 
 // Function to change the content
